@@ -30,6 +30,6 @@ if st.button("Predict"):
     
     # Run prediction
     prediction = model.predict(scaled_data)[0]
-    status = "Healthy Control (Class 1)" if prediction == 1 else "Patient (Class 2)"
+    status = "Healthy Control " if prediction == 1 else "Patient "
     
     st.success(f"Prediction: {status}")
